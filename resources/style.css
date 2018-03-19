@@ -1,28 +1,109 @@
+/* Header */
 header {
   display: flex;
   width: 100%;
-}
-
-nav {
-display: inline-flex;
-justify-content: flex-end;
-align-content: flex-end;
-}
-
-#logo {
-  display: inline-flex;
-  justify-content: flex-start;
-  color: MediumAquamarine;
   align-items: center;
-  padding-left: 20px;
-}
-
-#logotext {
-  padding-left: 10px;
-}
-
-#logo, .nav {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  border-bottom: black solid 1px;
+  height: 80px;
+  background-color: white;
+}
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 40px;
+}
+
+.logo span {
+  color: MediumAquamarine;
+  padding-left: 10px;
+}
+
+/* Nav */
+
+nav {
+  align-items: center;
+  padding-right: 30px;
+  display: block;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+/* Body */
+
+.body-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left, .middle, .right {
+  display: inline-flex;
+}
+
+.left {
+  display: block;
+  width: 630px;
+}
+
+.middle {
+  display: block;
+  width: 300px;
+}
+
+.right {
+  display: block;
+  width: 240px;
+}
+
+.heading {
+
+}
+
+.text {
+
+}
+
+#story-image1, #story-image2, #story-image3, #cats, #camera {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+#story-image1 {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  height: 300px;
+  font-size: 40px;
+}
+
+#story-image2 {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+  height: 300px;
+}
+
+#cats {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
+  height: 300px;
+}
+
+#camera {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
+  height: 300px;
+}
+
+#two-columns1, #two-columns2 {
+  display: inline-flex;
+}
+
+/* Link */
+
+a {
+  color: black;
 }
