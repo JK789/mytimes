@@ -42,6 +42,7 @@ nav span {
 .body-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .left, .middle, .right {
@@ -49,8 +50,10 @@ nav span {
 }
 
 .left {
-  display: block;
+  display: flex;
   width: 630px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .middle {
@@ -61,14 +64,15 @@ nav span {
 .right {
   display: block;
   width: 240px;
+  flex-direction: column;
 }
 
 .heading {
-
+margin: 15px;
 }
 
 .text {
-
+margin: 15px;
 }
 
 #story-image1, #story-image2, #story-image3, #cats, #camera {
@@ -86,6 +90,7 @@ nav span {
 #story-image2 {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
   height: 300px;
+  width: 300px;
 }
 
 #cats {
@@ -96,10 +101,27 @@ nav span {
 #camera {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
   height: 300px;
+  width: 300px;
 }
 
 #two-columns1, #two-columns2 {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bites {
+  border-bottom: 1px solid black;
+  padding: 10px 15px;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+
+h3 {
+  font-size: 16px;
+font-weight: bold;
+text-align: center;
 }
 
 /* Link */
